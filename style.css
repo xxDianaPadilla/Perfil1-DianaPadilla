@@ -7,6 +7,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 a{
     text-decoration: none;
     color: #000;
@@ -107,6 +108,20 @@ h2.separator{
     font-size: 40px;
     margin-top: 10px;
     margin-bottom: 40px;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 70px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 footer{
