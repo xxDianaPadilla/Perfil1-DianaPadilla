@@ -5,70 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil 1</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
 <body>
-    <nav>
-        <a href="#" class="logo">Diana Padilla</a>
-        <div class="links">
-            <a href="#">Emprendedores</a>
-            <a href="#">Empresas nacionales</a>
-            <a href="#">Empresas internacionales</a>
-        </div>
-        <div class="login">
-            <button class="signup">Registrate</button>
-            <button>Iniciar Sesión</button>
-        </div>
-    </nav>
-
     <header>
-        <div class="left">
-            <h1>Conoce a 10 emprendedores del área de <span>tecnología</span></h1>
-            <p>Estos 10 emprendedores de tecnología son referentes del mundo de las tech que con innovación y trabajo duro nos dejan boquiabiertos.
-            </p>
-            <a href="#">
-                <i class='bx bxs-right-arrow-circle'></i>
-                <span>Más</span>
-            </a>
-        </div>
-        <img src="IMG/software.png">
+        <a href="#" class="logo">Diana<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="" onclick="toggleMenu();">Inicio</a></li>
+            <li><a href="" onclick="toggleMenu();">Emprendedores Nacionales</a></li>
+            <li><a href="" onclick="toggleMenu();">Emprendedores Internacionales</a></li>
+        </ul>
     </header>
-
-    <h2 class="separator">
-        10 emprendedores de tecnología top:
-    </h2>
-
-    <div class="slide-container">
-        <div class="slide-content">
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="IMG/andrea-barber.jpg" class="card-img">
-                            </div>
-                    </div>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Emprendedores</h2>
+            <p>Estos 10 emprendedores de tecnología son referentes del mundo de las tech que con innovación y trabajo duro nos dejan boquiabiertos.</p>
+               <a href="#" class="btn">Sigue leyendo</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>Andrea Barber</span></h2>
+                <p>¡Un antes y un después en las energías renovables!<br><br>Andrea Barber es CEO de Rated Power, una empresa tecnológica cuyo software permite realizar el diseño de plantas fotovoltaicas a gran escala.<br><br>¡Reducir el impacto del carbono es uno de los objetivos principales de Rated Power! Respirar aire más limpio, sufrir menos enfermedades o luchar contra el cambio climático son algunas de las acciones que persiguen.<br><br>¡Genial, nos encantan los negocios que apuestan por conseguir modelos energéticos más limpios y sostenibles!</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="IMG/andrea-barber.jpg">
                 </div>
             </div>
         </div>
-    </div>
-
-    <footer>
-        <h3>¡La tecnología no deja de sorprendernos!</h3>
-        <div class="right">
-            <div class="links">
-                <a href="#">Política de Privacidad</a>
-                <a href="#">Contáctanos</a>
-            </div>
-            <div class="social">
-                <i class='bx bxl-instagram'></i>
-                <i class='bx bxl-facebook-square'></i>
-                <i class='bx bxl-github'></i>
-            </div>
-            <p>Copyright © 2024 Diana Padilla, Todos los derechos reservados.</p>
+    </section>
+    <section class="menu" id="menu">
+        <div class="title">
+            <h2 class="titleText">Más <span>E</span>mprendedores</h2>
+            <p>10 emprendedores de tecnología top:</p>
         </div>
-    </footer>
-    <script src="script.js"></script>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/andrea-barber.jpg">
+                </div>
+                <div class="text">
+                    <h3>Andrea Barber</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/javier-de-la-torre.jpg">
+                </div>
+                <div class="text">
+                    <h3>Javier de la Torre</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/maria-lopez.jpg">
+                </div>
+                <div class="text">
+                    <h3>María López</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/rafael-ferrer.jpg">
+                </div>
+                <div class="text">
+                    <h3>Rafael Ferrer</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/jorge-dobon.jpg">
+                </div>
+                <div class="text">
+                    <h3>Jorge Dobón</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/veronica-pascal.jpg">
+                </div>
+                <div class="text">
+                    <h3>Verónica Pascal</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="#" class="btn">Sigue leyendo</a>
+        </div>
+    </section>
+    <section class="expert" id="expert">
+        <div class="title">
+            <h2 class="titleText">Nuestros <span>E</span>mprendedores</h2>
+            <p>¡La tecnología no deja de sorprendernos!.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/elena-ibañez.jpg">
+                </div>
+                <div class="text">
+                    <h3>Elena Ibañez</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/carlota-pi.jpeg">
+                </div>
+                <div class="text">
+                    <h3>Carlota Pi</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/alicia-asin.jpg">
+                </div>
+                <div class="text">
+                    <h3>Alicia Asín</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/pablo-sanagustin.jpeg">
+                </div>
+                <div class="text">
+                    <h3>Pablo Sanagustín</h3>
+                </div>
+            </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+        <div class="title white">
+            <h2 class="titleText">Conoce <span>E</span>mprendedores</h2>
+            <p>¡El poder de la información!</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG/javier-de-la-torre.jpg">
+                </div>
+                <div class="text">
+                    <p>Javier de la Torre es fundador y CSO de CARTO, una empresa que se basa en 3 pilares o, mejor dicho, softwares: builder, engine y data observatory.
+
+                        Pero ¿qué tienen de particular estos 3 elementos? CARTO a través de ello ofrece a sus clientes una serie de herramientas que ligan datos internos de la empresa con la geolocalización.</p>
+                    <h3>Javier de la Torre</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG2/testi2.jpg">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. 
+                        Blanditiis earum eos cumque,
+                        ipsa officiis exercitationem facilis aut similique, 
+                        cum maxime porro officia consequatur obcaecati provident corporis ut numquam.</p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="IMG2/testi3.jpg">
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. 
+                        Blanditiis earum eos cumque,
+                        ipsa officiis exercitationem facilis aut similique, 
+                        cum maxime porro officia consequatur obcaecati provident corporis ut numquam.</p>
+                    <h3>Someone Famous</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontáctanos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="contactForm">
+            <h3>Enviar Mensaje</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Nombre">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Mensaje"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </section>
+    <div class="copyrightText">
+        <p>Copyright 2024 <a href="#">Diana Padilla</a>. 20200005</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky" , window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
