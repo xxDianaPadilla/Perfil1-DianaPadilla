@@ -410,7 +410,7 @@ section{
         position: relative;
         width: 40px;
         height: 40px;
-        background: url(../IMG2/menu.png);
+        background: url(IMG/menu.webp);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
@@ -418,7 +418,7 @@ section{
     }
 
     .menuToggle.active{
-        background: url(../IMG2/close.png);
+        background: url(IMG/x.png);
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
@@ -449,6 +449,8 @@ section{
     .row .col50 .imgBx{
         height: 300px;
         margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 40px;
     }
 
     .menu .content{
